@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Dashboard 3</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dist/css/custom.css">
+</head>
+<!--
+`body` tag options:
+
+  Apply one or more of the following classes to to the body tag
+  to get the desired effect
+
+  * sidebar-collapse
+  * sidebar-mini
+-->
+<body class="hold-transition login-page">
+	
+<div class="container-fluid">
+	<div class="row">
+	<div class="col-md-6">
+		<div class="cont">
+			<div class="circleTop"></div>
+			<div class="content-tab">
+			   <div class="login-box">
+				  <div class="card">
+					<div class="card-header text-center py-4">
+					  <img src="../../dist/img/logo.png" width="100">
+					</div>
+					<div class="card-body">
+					  <form action="login.html" method="post">
+						<div class="input-group mb-3">
+						  <input type="password" class="form-control" placeholder="Enter user name">
+						  <div class="input-group-append">
+							<div class="input-group-text">
+							  <span class="fas fa-user"></span>
+							</div>
+						  </div>
+						</div>
+						<div class="input-group mb-3">
+						  <input type="password" class="form-control" placeholder="Enter Comapny Code">
+						  <div class="input-group-append">
+							<div class="input-group-text">
+							  <span class="fas fa-lock"></span>
+							</div>
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-12">
+							<button type="submit" class="btn btn-danger btn-sm btn-block">Submit</button>
+						  </div>
+						  <!-- /.col -->
+						</div>
+					  </form>
+
+					</div>
+					<!-- /.login-card-body -->
+				  </div>
+				</div>
+				<!-- /.login-box -->
+				</div>
+				<div class="circleBottom"></div>
+
+			</div>
+		</div>
+		
+		<div class="col-md-6">
+			<div class="carousel-item">
+			  <div class="card card-widget widget-user-2 shadow-sm">
+					  <!-- Add the bg color to the header using any of the bg-* classes -->
+					  <div class="widget-user-header bg-warning">
+						<div class="widget-user-image">
+						  <img class="img-circle elevation-2" src="./dist/img/user7-128x128.jpg" alt="User Avatar">				  
+						</div>
+							<h6 class="widget-user-username">Nadia Carmichael 3</h6>
+							<p class="widget-user-desc">Lead Developer</p>
+						<!-- /.widget-user-image -->
+					  </div>
+					</div>
+			</div>
+		</div>
+	</div>	
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="dist/js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard3.js"></script>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.13.1/umd/react.production.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.1/umd/react-dom.production.min.js'></script>
+
+
+
+
+<script>
+    $(document).ready(function() {
+        var ctx = $("#chart-line");
+        var myLineChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [1500, 1600, 1700, 1750, 1800, 1850, 1900, 1950, 1999, 2050],
+                datasets: [{
+                    data: [86, 114, 106, 106, 107, 111, 133, 221, 783, 2478],
+                    label: "Africa",
+                    borderColor: "#dc3545",
+                    backgroundColor: '#dc3545',
+                    fill: false
+                }, {
+                    data: [282, 350, 411, 502, 635, 809, 947, 1402, 3700, 5267],
+                    label: "Asia",
+                    borderColor: "#dee2e6",
+                    fill: true,
+                    backgroundColor: '#dee2e6'
+                }, {
+                    data: [168, 170, 178, 190, 203, 276, 408, 547, 675, 734],
+                    label: "Europe",
+                    borderColor: "#3cba9f",
+                    fill: false,
+                    backgroundColor: '#3cba9f'
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'World population per region (in millions)'
+                }
+            }
+        });
+    });
+</script>
+
+<script src="dist/js/custom.js"></script>
+</body>
+</html>

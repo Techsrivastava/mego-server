@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Dashboard 3</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dist/css/custom.css">
+</head>
+<!--
+`body` tag options:
+
+  Apply one or more of the following classes to to the body tag
+  to get the desired effect
+
+  * sidebar-collapse
+  * sidebar-mini
+-->
+<body class="hold-transition layout-fixed">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-danger elevation-1">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="dist/img/logo.png" alt="AdminLTE Logo" class="brand-image">     
+    </a>
+	<div class="clearfix"></div>
+    <!-- Sidebar -->
+    <div class="sidebar">  
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          
+          <li class="nav-item">
+            <a href="index3.html" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Add Employee Details
+              </p>
+            </a>
+          </li>
+          
+		 <li class="nav-item">
+            <a href="iframe.html" class="nav-link">
+              <i class="nav-icon fa fa-user"></i>
+              <p>
+                Admin                
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-image"></i>
+              <p>
+                Oprations
+              </p>
+            </a>
+          </li>
+
+		  <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-user"></i>
+              <p>
+                Logistics                
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-image"></i>
+              <p>
+                HR
+              </p>
+            </a>
+          </li>
+		  
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-user"></i>
+              <p>
+                Genral Setting                
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-image"></i>
+              <p>
+                Catalog
+              </p>
+            </a>
+          </li>
+           <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-image"></i>
+              <p>
+                Reports
+              </p>
+            </a>
+          </li>
+		  
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h5 class="m-0">Dashboard</h5>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="msform">
+                   
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>  <!-- fieldsets -->
+                    <fieldset>
+                        <div class="card h-auto mb-2">
+				<div class="card-header ui-sortable-handle">
+					<div class="d-flex justify-content-between">
+						<div>
+							<h6 class="card-title">Fill Form</h6>
+						</div>	
+													
+					</div>	
+				  </div>
+				
+<div class="card-body">
+	<div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
+				
+		<div class="form-group row">
+
+                    <div class="col-sm-3">
+                        <label for="example-nf-email">Department<sup style="color:red;">*</sup></label>
+						<select class="form-control" onchange="getstate($(this).val(),'emp_presentstate')" id="emp_presentcountry" name="emp_presentcountry" required="required">
+							<option>Select </option>
+							<option value="1">Design</option>                                                    
+							<option value="2">Development</option>                                                    
+                        </select>	
+                        
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="example-input-small">Designation<sup style="color:red;">*</sup></label>                            
+                        <select class="form-control" onchange="getstate($(this).val(),'emp_presentstate')" id="emp_presentcountry" name="emp_presentcountry" required="required">
+							<option>Select </option>
+							<option value="1">Design</option>                                                    
+							<option value="2">Development</option>                                                    
+                        </select>	
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="example-input-small">Reporting Manager<sup style="color:red;">*</sup></label>                            
+                        <select class="form-control" onchange="getstate($(this).val(),'emp_presentstate')" id="emp_presentcountry" name="emp_presentcountry" required="required">
+							<option>Select </option>
+							<option value="1">Design</option>                                                    
+							<option value="2">Development</option>                                                    
+                        </select>	
+                    </div>
+
+                    <div class="col-sm-3">
+                        <label for="example-input-small">Annual CTC<sup style="color:red;">*</sup></label>                            
+                          <input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+                    </div>
+                      <div class="col-sm-3">
+                        <label for="example-input-small">Employee Name<sup style="color:red;">*</sup></label>                            
+                        <input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+                    </div>
+                      <div class="col-sm-3">
+                        <label for="example-input-small">Personal Email<sup style="color:red;">*</sup></label>                            
+                        <input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+                    </div>
+
+
+					<div class="col-sm-3">
+                        <label for="example-input-small">Comapany Email<sup style="color:red;">*</sup></label>                            
+                          <input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+                    </div>
+                      <div class="col-sm-3">
+                        <label for="example-input-small">Mobile 1<sup style="color:red;">*</sup></label>                            
+                        <input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+                    </div>
+                      <div class="col-sm-3">
+                        <label for="example-input-small">Mobile 2<sup style="color:red;">*</sup></label>                            
+                        <input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+                    </div>
+					
+					
+                    <div class="col-sm-3">
+                        <label for="example-input-small">Gender</label>                            
+                        <select class="form-control" onchange="getstate($(this).val(),'emp_presentstate')" id="emp_presentcountry" name="emp_presentcountry" required="required">
+							<option>Select Gender</option>
+							<option value="1">Male</option>                                                    
+							<option value="2">Female</option>                                                    
+                        </select>	
+                    </div>
+
+                    <div class="col-sm-3">
+                        <label for="example-input-small">Emergency Contact No<sup style="color:red;">*</sup></label>                            
+                        <input type="text" id="cpersonname" name="cpersonname" class="form-control input-sm" placeholder="Enter Contact Person Name" required="required">
+                    </div>
+                    
+                    <div class="col-sm-3">
+                        <label for="example-input-small">Emergency Contact Relation<sup style="color:red;">*</sup></label>                            
+                        <input type="text" id="cmobile" name="cmobile" class="form-control input-sm" required="required" placeholder="Enter Contact Person Mobile No">
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="example-input-small">Emergency Relative Contact Name</label>                            
+                        <input type="email" id="cemail" name="cemail" required="required" class="form-control input-sm" placeholder="Enter Contact Person Email">         
+                    </div>
+
+                    <div class="col-sm-3">
+                        <label for="example-input-small">Date of Birth</label>                            
+                        <input type="date" id="gstno" name="gstno" class="form-control input-sm" placeholder="Enter GSTNO">         
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="example-input-small">Blood Group</label>                            
+                        <input type="text" id="kycno" name="kycno" class="form-control input-sm" placeholder="Enter Kyc Document No">         
+                    </div>
+                                
+			   </div>			
+		 </div>
+	  </div>
+	  <!-- /.card-body -->
+	</div>	
+						
+						<input type="button" name="next" class="next action-button" value="Next" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+	<div class="row">
+		<div class="col-md-6">		
+			<div class="card h-auto mb-2">
+				<div class="card-header ui-sortable-handle">
+					<div class="d-flex justify-content-between">
+						<div>
+							<h6 class="card-title">Persent Address</h6>
+						</div>	
+													
+					</div>	
+				  </div>
+				
+<div class="card-body">
+	<div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
+			
+			<div class="form-group row">
+			
+				<div class="col-sm-6">
+					<label for="example-nf-email">Persent Address<sup style="color:red;">*</sup></label>
+					<select name="country_id" class="form-control country">
+							<option value="">- Select -</option>
+							<option value="1">Afghanistan</option>
+							<option value="2">Albania</option>
+							<option value="3">Algeria</option>
+							<option value="4">American Samoa</option>
+							<option value="5">Andorra</option>
+							<option value="6">Angola</option>
+							<option value="7">Anguilla</option>
+							<option value="8">Antarctica</option>
+							<option value="9">Antigua And Barbuda</option>
+							<option value="10">Argentina</option>
+							<option value="11">Armenia</option>
+							<option value="12">Aruba</option>
+							<option value="13">Australia</option>
+							<option value="14">Austria</option>
+							<option value="15">Azerbaijan</option>
+							<option value="16">Bahamas The</option>
+							<option value="17">Bahrain</option>
+							<option value="18">Bangladesh</option>
+							<option value="19">Barbados</option>
+							<option value="20">Belarus</option>
+							<option value="21">Belgium</option>
+							<option value="22">Belize</option>
+							<option value="23">Benin</option>
+							<option value="24">Bermuda</option>
+							<option value="25">Bhutan</option>
+							<option value="26">Bolivia</option>
+							<option value="27">Bosnia and Herzegovina</option>
+							<option value="28">Botswana</option>
+							<option value="29">Bouvet Island</option>
+							<option value="30">Brazil</option>
+							<option value="31">British Indian Ocean Territory</option>
+							<option value="32">Brunei</option>
+							<option value="33">Bulgaria</option>
+							<option value="34">Burkina Faso</option>
+							<option value="35">Burundi</option>
+							<option value="36">Cambodia</option>
+							<option value="37">Cameroon</option>
+							<option value="38">Canada</option>
+							<option value="39">Cape Verde</option>
+							<option value="40">Cayman Islands</option>
+							<option value="41">Central African Republic</option>
+							<option value="42">Chad</option>
+							<option value="43">Chile</option>
+							<option value="44">China</option>
+							<option value="45">Christmas Island</option>
+							<option value="46">Cocos (Keeling) Islands</option>
+							<option value="47">Colombia</option>
+							<option value="48">Comoros</option>
+							<option value="51">Cook Islands</option>
+							<option value="52">Costa Rica</option>
+							<option value="53">Cote D'Ivoire (Ivory Coast)</option>
+							<option value="54">Croatia (Hrvatska)</option>
+							<option value="55">Cuba</option>
+							<option value="56">Cyprus</option>
+							<option value="57">Czech Republic</option>
+							<option value="50">Democratic Republic Of The Congo</option>
+							<option value="58">Denmark</option>
+							<option value="59">Djibouti</option>
+							<option value="60">Dominica</option>
+							<option value="61">Dominican Republic</option>
+							<option value="62">East Timor</option>
+							<option value="63">Ecuador</option>
+							<option value="64">Egypt</option>
+							<option value="65">El Salvador</option>
+							<option value="66">Equatorial Guinea</option>
+							<option value="67">Eritrea</option>
+							<option value="68">Estonia</option>
+							<option value="69">Ethiopia</option>
+							<option value="70">External Territories of Australia</option>
+							<option value="71">Falkland Islands</option>
+							<option value="72">Faroe Islands</option>
+							<option value="73">Fiji Islands</option>
+							<option value="74">Finland</option>
+							<option value="75">France</option>
+							<option value="76">French Guiana</option>
+							<option value="77">French Polynesia</option>
+							<option value="78">French Southern Territories</option>
+							<option value="79">Gabon</option>
+							<option value="80">Gambia The</option>
+							<option value="81">Georgia</option>
+							<option value="82">Germany</option>
+							<option value="83">Ghana</option>
+							<option value="84">Gibraltar</option>
+							<option value="85">Greece</option>
+							<option value="86">Greenland</option>
+							<option value="87">Grenada</option>
+							<option value="88">Guadeloupe</option>
+							<option value="89">Guam</option>
+							<option value="90">Guatemala</option>
+							<option value="91">Guernsey and Alderney</option>
+							<option value="92">Guinea</option>
+							<option value="93">Guinea-Bissau</option>
+							<option value="94">Guyana</option>
+							<option value="95">Haiti</option>
+							<option value="96">Heard and McDonald Islands</option>
+							<option value="97">Honduras</option>
+							<option value="98">Hong Kong S.A.R.</option>
+							<option value="99">Hungary</option>
+							<option value="100">Iceland</option>
+							<option value="101">India</option>
+							<option value="102">Indonesia</option>
+							<option value="103">Iran</option>
+							<option value="104">Iraq</option>
+							<option value="105">Ireland</option>
+							<option value="106">Israel</option>
+							<option value="107">Italy</option>
+							<option value="108">Jamaica</option>
+							<option value="109">Japan</option>
+							<option value="110">Jersey</option>
+							<option value="111">Jordan</option>
+							<option value="112">Kazakhstan</option>
+							<option value="113">Kenya</option>
+							<option value="114">Kiribati</option>
+							<option value="115">Korea North</option>
+							<option value="116">Korea South</option>
+							<option value="117">Kuwait</option>
+							<option value="118">Kyrgyzstan</option>
+							<option value="119">Laos</option>
+							<option value="120">Latvia</option>
+							<option value="121">Lebanon</option>
+							<option value="122">Lesotho</option>
+							<option value="123">Liberia</option>
+							<option value="124">Libya</option>
+							<option value="125">Liechtenstein</option>
+							<option value="126">Lithuania</option>
+							<option value="127">Luxembourg</option>
+							<option value="128">Macau S.A.R.</option>
+							<option value="129">Macedonia</option>
+							<option value="130">Madagascar</option>
+							<option value="131">Malawi</option>
+							<option value="132">Malaysia</option>
+							<option value="133">Maldives</option>
+							<option value="134">Mali</option>
+							<option value="135">Malta</option>
+							<option value="136">Man (Isle of)</option>
+							<option value="137">Marshall Islands</option>
+							<option value="138">Martinique</option>
+							<option value="139">Mauritania</option>
+							<option value="140">Mauritius</option>
+							<option value="141">Mayotte</option>
+							<option value="142">Mexico</option>
+							<option value="143">Micronesia</option>
+							<option value="144">Moldova</option>
+							<option value="145">Monaco</option>
+							<option value="146">Mongolia</option>
+							<option value="147">Montserrat</option>
+							<option value="148">Morocco</option>
+							<option value="149">Mozambique</option>
+							<option value="150">Myanmar</option>
+							<option value="151">Namibia</option>
+							<option value="152">Nauru</option>
+							<option value="153">Nepal</option>
+							<option value="154">Netherlands Antilles</option>
+							<option value="155">Netherlands The</option>
+							<option value="156">New Caledonia</option>
+							<option value="157">New Zealand</option>
+							<option value="158">Nicaragua</option>
+							<option value="159">Niger</option>
+							<option value="160">Nigeria</option>
+							<option value="161">Niue</option>
+							<option value="162">Norfolk Island</option>
+							<option value="163">Northern Mariana Islands</option>
+							<option value="164">Norway</option>
+							<option value="165">Oman</option>
+							<option value="166">Pakistan</option>
+							<option value="167">Palau</option>
+							<option value="168">Palestinian Territory Occupied</option>
+							<option value="169">Panama</option>
+							<option value="170">Papua new Guinea</option>
+							<option value="171">Paraguay</option>
+							<option value="172">Peru</option>
+							<option value="173">Philippines</option>
+							<option value="174">Pitcairn Island</option>
+							<option value="175">Poland</option>
+							<option value="176">Portugal</option>
+							<option value="177">Puerto Rico</option>
+							<option value="178">Qatar</option>
+							<option value="49">Republic Of The Congo</option>
+							<option value="179">Reunion</option>
+							<option value="180">Romania</option>
+							<option value="181">Russia</option>
+							<option value="182">Rwanda</option>
+							<option value="183">Saint Helena</option>
+							<option value="184">Saint Kitts And Nevis</option>
+							<option value="185">Saint Lucia</option>
+							<option value="186">Saint Pierre and Miquelon</option>
+							<option value="187">Saint Vincent And The Grenadines</option>
+							<option value="188">Samoa</option>
+							<option value="189">San Marino</option>
+							<option value="190">Sao Tome and Principe</option>
+							<option value="191">Saudi Arabia</option>
+							<option value="192">Senegal</option>
+							<option value="193">Serbia</option>
+							<option value="194">Seychelles</option>
+							<option value="195">Sierra Leone</option>
+							<option value="196">Singapore</option>
+							<option value="197">Slovakia</option>
+							<option value="198">Slovenia</option>
+							<option value="199">Smaller Territories of the UK</option>
+							<option value="200">Solomon Islands</option>
+							<option value="201">Somalia</option>
+							<option value="202">South Africa</option>
+							<option value="203">South Georgia</option>
+							<option value="204">South Sudan</option>
+							<option value="205">Spain</option>
+							<option value="206">Sri Lanka</option>
+							<option value="207">Sudan</option>
+							<option value="208">Suriname</option>
+							<option value="209">Svalbard And Jan Mayen Islands</option>
+							<option value="210">Swaziland</option>
+							<option value="211">Sweden</option>
+							<option value="212">Switzerland</option>
+							<option value="213">Syria</option>
+							<option value="214">Taiwan</option>
+							<option value="215">Tajikistan</option>
+							<option value="216">Tanzania</option>
+							<option value="217">Thailand</option>
+							<option value="218">Togo</option>
+							<option value="219">Tokelau</option>
+							<option value="220">Tonga</option>
+							<option value="221">Trinidad And Tobago</option>
+							<option value="222">Tunisia</option>
+							<option value="223">Turkey</option>
+							<option value="224">Turkmenistan</option>
+							<option value="225">Turks And Caicos Islands</option>
+							<option value="226">Tuvalu</option>
+							<option value="227">Uganda</option>
+							<option value="228">Ukraine</option>
+							<option value="229">United Arab Emirates</option>
+							<option value="230">United Kingdom</option>
+							<option value="231">United States</option>
+							<option value="232">United States Minor Outlying Islands</option>
+							<option value="233">Uruguay</option>
+							<option value="234">Uzbekistan</option>
+							<option value="235">Vanuatu</option>
+							<option value="236">Vatican City State (Holy See)</option>
+							<option value="237">Venezuela</option>
+							<option value="238">Vietnam</option>
+							<option value="239">Virgin Islands (British)</option>
+							<option value="240">Virgin Islands (US)</option>
+							<option value="241">Wallis And Futuna Islands</option>
+							<option value="242">Western Sahara</option>
+							<option value="243">Yemen</option>
+							<option value="244">Yugoslavia</option>
+							<option value="245">Zambia</option>
+							<option value="246">Zimbabwe</option>
+					</select>                        
+				</div>
+				
+				<div class="col-sm-6">
+					<label for="example-input-small">State<sup style="color:red;">*</sup></label>                            
+					<select class="form-control" onchange="getstate($(this).val(),'emp_presentstate')" id="emp_presentcountry" name="emp_presentcountry" required="required">
+						<option>Select </option>
+						<option value="1">Delhi</option>                                                    
+						<option value="2">UP</option>                                                    
+					</select>	
+				</div>
+				<div class="col-sm-6">
+					<label for="example-input-small">City<sup style="color:red;">*</sup></label>                            
+					<select class="form-control" onchange="getstate($(this).val(),'emp_presentstate')" id="emp_presentcountry" name="emp_presentcountry" required="required">
+						<option>Select </option>
+						<option value="1">Jaipur</option>                                                    
+						<option value="2">Indor</option>                                                    
+					</select>	
+				</div>
+
+				<div class="col-sm-6">
+					<label for="example-input-small">Pincode<sup style="color:red;">*</sup></label>                            
+					  <input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+				</div>
+
+				<div class="col-sm-12">
+					<label for="example-input-small">Peresent Address</label>  
+					<textarea class="form-control" cols="20"></textarea>   
+				</div>
+							
+		   </div>
+		</div>	
+	 </div>
+  </div>
+  <!-- /.card-body -->
+</div>							
+
+
+<div class="col-md-6">		
+			<div class="card h-auto mb-2">
+				<div class="card-header ui-sortable-handle">
+					<div class="d-flex justify-content-between">
+							<h6 class="card-title">Parmanent Address</h6>
+							<div class="wizard-form-radio">
+								<input name="gender" id="radio1" type="checkbox" value="Male" checked="">
+								<label for="radio1" class="mt-0">Same as Present Address</label>
+							</div>
+						
+													
+					</div>	
+				  </div>
+				
+<div class="card-body">
+	<div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
+			
+			<div class="form-group row">
+			
+				<div class="col-sm-6">
+					<label for="example-nf-email">Persent Address<sup style="color:red;">*</sup></label>
+					<select name="country_id" class="form-control country">
+							<option value="">- Select -</option>
+							<option value="1">Afghanistan</option>
+							<option value="2">Albania</option>
+							<option value="3">Algeria</option>
+							<option value="4">American Samoa</option>
+							<option value="5">Andorra</option>
+							<option value="6">Angola</option>
+							<option value="7">Anguilla</option>
+							<option value="8">Antarctica</option>
+							<option value="9">Antigua And Barbuda</option>
+							<option value="10">Argentina</option>
+							<option value="11">Armenia</option>
+							<option value="12">Aruba</option>
+							<option value="13">Australia</option>
+							<option value="14">Austria</option>
+							<option value="15">Azerbaijan</option>
+							<option value="16">Bahamas The</option>
+							<option value="17">Bahrain</option>
+							<option value="18">Bangladesh</option>
+							<option value="19">Barbados</option>
+							<option value="20">Belarus</option>
+							<option value="21">Belgium</option>
+							<option value="22">Belize</option>
+							<option value="23">Benin</option>
+							<option value="24">Bermuda</option>
+							<option value="25">Bhutan</option>
+							<option value="26">Bolivia</option>
+							<option value="27">Bosnia and Herzegovina</option>
+							<option value="28">Botswana</option>
+							<option value="29">Bouvet Island</option>
+							<option value="30">Brazil</option>
+							<option value="31">British Indian Ocean Territory</option>
+							<option value="32">Brunei</option>
+							<option value="33">Bulgaria</option>
+							<option value="34">Burkina Faso</option>
+							<option value="35">Burundi</option>
+							<option value="36">Cambodia</option>
+							<option value="37">Cameroon</option>
+							<option value="38">Canada</option>
+							<option value="39">Cape Verde</option>
+							<option value="40">Cayman Islands</option>
+							<option value="41">Central African Republic</option>
+							<option value="42">Chad</option>
+							<option value="43">Chile</option>
+							<option value="44">China</option>
+							<option value="45">Christmas Island</option>
+							<option value="46">Cocos (Keeling) Islands</option>
+							<option value="47">Colombia</option>
+							<option value="48">Comoros</option>
+							<option value="51">Cook Islands</option>
+							<option value="52">Costa Rica</option>
+							<option value="53">Cote D'Ivoire (Ivory Coast)</option>
+							<option value="54">Croatia (Hrvatska)</option>
+							<option value="55">Cuba</option>
+							<option value="56">Cyprus</option>
+							<option value="57">Czech Republic</option>
+							<option value="50">Democratic Republic Of The Congo</option>
+							<option value="58">Denmark</option>
+							<option value="59">Djibouti</option>
+							<option value="60">Dominica</option>
+							<option value="61">Dominican Republic</option>
+							<option value="62">East Timor</option>
+							<option value="63">Ecuador</option>
+							<option value="64">Egypt</option>
+							<option value="65">El Salvador</option>
+							<option value="66">Equatorial Guinea</option>
+							<option value="67">Eritrea</option>
+							<option value="68">Estonia</option>
+							<option value="69">Ethiopia</option>
+							<option value="70">External Territories of Australia</option>
+							<option value="71">Falkland Islands</option>
+							<option value="72">Faroe Islands</option>
+							<option value="73">Fiji Islands</option>
+							<option value="74">Finland</option>
+							<option value="75">France</option>
+							<option value="76">French Guiana</option>
+							<option value="77">French Polynesia</option>
+							<option value="78">French Southern Territories</option>
+							<option value="79">Gabon</option>
+							<option value="80">Gambia The</option>
+							<option value="81">Georgia</option>
+							<option value="82">Germany</option>
+							<option value="83">Ghana</option>
+							<option value="84">Gibraltar</option>
+							<option value="85">Greece</option>
+							<option value="86">Greenland</option>
+							<option value="87">Grenada</option>
+							<option value="88">Guadeloupe</option>
+							<option value="89">Guam</option>
+							<option value="90">Guatemala</option>
+							<option value="91">Guernsey and Alderney</option>
+							<option value="92">Guinea</option>
+							<option value="93">Guinea-Bissau</option>
+							<option value="94">Guyana</option>
+							<option value="95">Haiti</option>
+							<option value="96">Heard and McDonald Islands</option>
+							<option value="97">Honduras</option>
+							<option value="98">Hong Kong S.A.R.</option>
+							<option value="99">Hungary</option>
+							<option value="100">Iceland</option>
+							<option value="101">India</option>
+							<option value="102">Indonesia</option>
+							<option value="103">Iran</option>
+							<option value="104">Iraq</option>
+							<option value="105">Ireland</option>
+							<option value="106">Israel</option>
+							<option value="107">Italy</option>
+							<option value="108">Jamaica</option>
+							<option value="109">Japan</option>
+							<option value="110">Jersey</option>
+							<option value="111">Jordan</option>
+							<option value="112">Kazakhstan</option>
+							<option value="113">Kenya</option>
+							<option value="114">Kiribati</option>
+							<option value="115">Korea North</option>
+							<option value="116">Korea South</option>
+							<option value="117">Kuwait</option>
+							<option value="118">Kyrgyzstan</option>
+							<option value="119">Laos</option>
+							<option value="120">Latvia</option>
+							<option value="121">Lebanon</option>
+							<option value="122">Lesotho</option>
+							<option value="123">Liberia</option>
+							<option value="124">Libya</option>
+							<option value="125">Liechtenstein</option>
+							<option value="126">Lithuania</option>
+							<option value="127">Luxembourg</option>
+							<option value="128">Macau S.A.R.</option>
+							<option value="129">Macedonia</option>
+							<option value="130">Madagascar</option>
+							<option value="131">Malawi</option>
+							<option value="132">Malaysia</option>
+							<option value="133">Maldives</option>
+							<option value="134">Mali</option>
+							<option value="135">Malta</option>
+							<option value="136">Man (Isle of)</option>
+							<option value="137">Marshall Islands</option>
+							<option value="138">Martinique</option>
+							<option value="139">Mauritania</option>
+							<option value="140">Mauritius</option>
+							<option value="141">Mayotte</option>
+							<option value="142">Mexico</option>
+							<option value="143">Micronesia</option>
+							<option value="144">Moldova</option>
+							<option value="145">Monaco</option>
+							<option value="146">Mongolia</option>
+							<option value="147">Montserrat</option>
+							<option value="148">Morocco</option>
+							<option value="149">Mozambique</option>
+							<option value="150">Myanmar</option>
+							<option value="151">Namibia</option>
+							<option value="152">Nauru</option>
+							<option value="153">Nepal</option>
+							<option value="154">Netherlands Antilles</option>
+							<option value="155">Netherlands The</option>
+							<option value="156">New Caledonia</option>
+							<option value="157">New Zealand</option>
+							<option value="158">Nicaragua</option>
+							<option value="159">Niger</option>
+							<option value="160">Nigeria</option>
+							<option value="161">Niue</option>
+							<option value="162">Norfolk Island</option>
+							<option value="163">Northern Mariana Islands</option>
+							<option value="164">Norway</option>
+							<option value="165">Oman</option>
+							<option value="166">Pakistan</option>
+							<option value="167">Palau</option>
+							<option value="168">Palestinian Territory Occupied</option>
+							<option value="169">Panama</option>
+							<option value="170">Papua new Guinea</option>
+							<option value="171">Paraguay</option>
+							<option value="172">Peru</option>
+							<option value="173">Philippines</option>
+							<option value="174">Pitcairn Island</option>
+							<option value="175">Poland</option>
+							<option value="176">Portugal</option>
+							<option value="177">Puerto Rico</option>
+							<option value="178">Qatar</option>
+							<option value="49">Republic Of The Congo</option>
+							<option value="179">Reunion</option>
+							<option value="180">Romania</option>
+							<option value="181">Russia</option>
+							<option value="182">Rwanda</option>
+							<option value="183">Saint Helena</option>
+							<option value="184">Saint Kitts And Nevis</option>
+							<option value="185">Saint Lucia</option>
+							<option value="186">Saint Pierre and Miquelon</option>
+							<option value="187">Saint Vincent And The Grenadines</option>
+							<option value="188">Samoa</option>
+							<option value="189">San Marino</option>
+							<option value="190">Sao Tome and Principe</option>
+							<option value="191">Saudi Arabia</option>
+							<option value="192">Senegal</option>
+							<option value="193">Serbia</option>
+							<option value="194">Seychelles</option>
+							<option value="195">Sierra Leone</option>
+							<option value="196">Singapore</option>
+							<option value="197">Slovakia</option>
+							<option value="198">Slovenia</option>
+							<option value="199">Smaller Territories of the UK</option>
+							<option value="200">Solomon Islands</option>
+							<option value="201">Somalia</option>
+							<option value="202">South Africa</option>
+							<option value="203">South Georgia</option>
+							<option value="204">South Sudan</option>
+							<option value="205">Spain</option>
+							<option value="206">Sri Lanka</option>
+							<option value="207">Sudan</option>
+							<option value="208">Suriname</option>
+							<option value="209">Svalbard And Jan Mayen Islands</option>
+							<option value="210">Swaziland</option>
+							<option value="211">Sweden</option>
+							<option value="212">Switzerland</option>
+							<option value="213">Syria</option>
+							<option value="214">Taiwan</option>
+							<option value="215">Tajikistan</option>
+							<option value="216">Tanzania</option>
+							<option value="217">Thailand</option>
+							<option value="218">Togo</option>
+							<option value="219">Tokelau</option>
+							<option value="220">Tonga</option>
+							<option value="221">Trinidad And Tobago</option>
+							<option value="222">Tunisia</option>
+							<option value="223">Turkey</option>
+							<option value="224">Turkmenistan</option>
+							<option value="225">Turks And Caicos Islands</option>
+							<option value="226">Tuvalu</option>
+							<option value="227">Uganda</option>
+							<option value="228">Ukraine</option>
+							<option value="229">United Arab Emirates</option>
+							<option value="230">United Kingdom</option>
+							<option value="231">United States</option>
+							<option value="232">United States Minor Outlying Islands</option>
+							<option value="233">Uruguay</option>
+							<option value="234">Uzbekistan</option>
+							<option value="235">Vanuatu</option>
+							<option value="236">Vatican City State (Holy See)</option>
+							<option value="237">Venezuela</option>
+							<option value="238">Vietnam</option>
+							<option value="239">Virgin Islands (British)</option>
+							<option value="240">Virgin Islands (US)</option>
+							<option value="241">Wallis And Futuna Islands</option>
+							<option value="242">Western Sahara</option>
+							<option value="243">Yemen</option>
+							<option value="244">Yugoslavia</option>
+							<option value="245">Zambia</option>
+							<option value="246">Zimbabwe</option>
+					</select>                        
+				</div>
+				
+				<div class="col-sm-6">
+					<label for="example-input-small">State<sup style="color:red;">*</sup></label>                            
+					<select class="form-control" onchange="getstate($(this).val(),'emp_presentstate')" id="emp_presentcountry" name="emp_presentcountry" required="required">
+						<option>Select </option>
+						<option value="1">Delhi</option>                                                    
+						<option value="2">UP</option>                                                    
+					</select>	
+				</div>
+				<div class="col-sm-6">
+					<label for="example-input-small">City<sup style="color:red;">*</sup></label>                            
+					<select class="form-control" onchange="getstate($(this).val(),'emp_presentstate')" id="emp_presentcountry" name="emp_presentcountry" required="required">
+						<option>Select </option>
+						<option value="1">Jaipur</option>                                                    
+						<option value="2">Indor</option>                                                    
+					</select>	
+				</div>
+
+				<div class="col-sm-6">
+					<label for="example-input-small">Pincode<sup style="color:red;">*</sup></label>                            
+					  <input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+				</div>
+
+				<div class="col-sm-12">
+					<label for="example-input-small">Peresent Address</label>  
+					<textarea class="form-control" cols="20"></textarea>   
+				</div>
+							
+		   </div>
+		</div>	
+	 </div>
+  </div>
+  <!-- /.card-body -->
+</div>	
+
+		<div class="col-md-6">		
+			<div class="card h-auto mb-2">
+				<div class="card-header ui-sortable-handle">
+					<div class="d-flex justify-content-between">
+						<div>
+							<h6 class="card-title">Personal Document</h6>
+						</div>	
+													
+					</div>	
+				  </div>
+				
+<div class="card-body">
+	<div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
+			
+			<div class="form-group row">
+			
+				<div class="col-sm-6">
+					<label for="example-nf-email">Aadhar card no.<sup style="color:red;">*</sup></label>
+					<input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">                     
+				</div>
+				
+				<div class="col-sm-6">
+					<label for="example-input-small">Upload card<sup style="color:red;">*</sup></label>                            
+					<input type="file" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+				</div>
+				<div class="col-sm-6">
+					<label for="example-input-small">Pancard no.<sup style="color:red;">*</sup></label>                            
+					<input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+				</div>
+
+				<div class="col-sm-6">
+					<label for="example-input-small">Upload Pancard<sup style="color:red;">*</sup></label>                            
+					  <input type="file" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+				</div>
+				
+				<div class="col-sm-6">
+					<label for="example-input-small">Upload CV/Resume</label>  
+					<input type="file" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">   
+				</div>
+				
+				<div class="col-sm-6">
+					<label for="example-input-small">Photograph</label>  
+					<input type="file" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">   
+				</div>
+							
+		   </div>
+		</div>	
+	 </div>
+  </div>
+  <!-- /.card-body -->
+</div>							
+
+
+<div class="col-md-6">		
+			<div class="card h-auto mb-2">
+				<div class="card-header ui-sortable-handle">
+					<div class="d-flex justify-content-between">
+							<h6 class="card-title">Bank Detail</h6>												
+													
+					</div>	
+				  </div>
+				
+<div class="card-body">
+	<div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
+			
+			<div class="form-group row">
+			
+				<div class="col-sm-6">
+					<label for="example-nf-email">Bank Name<sup style="color:red;">*</sup></label>
+					<input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">                     
+				</div>
+				
+				<div class="col-sm-6">
+					<label for="example-input-small">IFSC Code<sup style="color:red;">*</sup></label>                            
+					<input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+				</div>
+				<div class="col-sm-6">
+					<label for="example-input-small">Account No.<sup style="color:red;">*</sup></label>                            
+					<input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+				</div>
+
+				<div class="col-sm-6">
+					<label for="example-input-small">Upload File<sup style="color:red;">*</sup></label>                            
+					<input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+				</div>
+						
+		   </div>
+		</div>	
+	 </div>
+  </div>
+  <!-- /.card-body -->
+</div>	
+
+</div>
+
+		</div> 
+		<input type="button" name="next" class="next action-button" value="Next" /> 
+		<input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                    
+	</fieldset>
+	
+	<fieldset>
+		<div class="form-card">
+		
+			<div class="card h-auto mb-2">
+				<div class="card-header ui-sortable-handle">
+					<div class="d-flex justify-content-between">
+						<div>
+							<h6 class="card-title">Employee Previous Employeement detail</h6>
+						</div>	
+													
+					</div>	
+				  </div>
+				
+<div class="card-body">
+	<div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
+				
+		<div class="form-group row">
+
+                    <div class="col-sm-3">
+                        <label for="example-nf-email">Comapny Name<sup style="color:red;">*</sup></label>
+						<input type="file" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+                        
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="example-input-small">Address<sup style="color:red;">*</sup></label>                            
+                       	<input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="example-input-small">Appointment Term<sup style="color:red;">*</sup></label>                            
+                        <select class="form-control" onchange="getstate($(this).val(),'emp_presentstate')" id="emp_presentcountry" name="emp_presentcountry" required="required">
+							<option>Select Term </option>
+							<option value="1">Design</option>                                                    
+							<option value="2">Development</option>                                                    
+                        </select>	
+                    </div>
+
+                    <div class="col-sm-3">
+                        <label for="example-input-small">Offer Letter<sup style="color:red;">*</sup></label>                            
+                          <input type="file" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+                    </div>
+                      <div class="col-sm-3">
+                        <label for="example-input-small">Salary Slip<sup style="color:red;">*</sup></label>                            
+                        <input type="file" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+                    </div>
+                      <div class="col-sm-3">
+                        <label for="example-input-small">Leaving Letter<sup style="color:red;">*</sup></label>                            
+                        <input type="file" id="name" name="name" class="form-control input-sm" placeholder="Enter Leaving Letter" required="required">
+                    </div>
+
+
+					<div class="col-sm-3">
+                        <label for="example-input-small">Last CTC<sup style="color:red;">*</sup></label>                            
+                          <input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter CTC" required="required">
+                    </div>
+                      <div class="col-sm-3">
+                        <label for="example-input-small">Start Date<sup style="color:red;">*</sup></label>                            
+                        <input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+                    </div>
+                      <div class="col-sm-3">
+                        <label for="example-input-small">Last date<sup style="color:red;">*</sup></label>                            
+                        <input type="date" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+                    </div>
+					
+                                
+			   </div>			
+		 </div>
+	  </div>
+	  <!-- /.card-body -->
+	</div>	
+</div>
+		
+		<input type="button" name="next" class="next action-button" value="Submit" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+	</fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                           <br>
+                            <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                            <div class="row justify-content-center">
+                                <div class="col-3"> <img src="dist/img/success-mark.png" class="fit-image"> </div>
+                            </div> <br><br>
+                            <div class="row justify-content-center">
+                                <div class="col-7 text-center">
+                                    <h5 class="purple-text text-center">You information Successfully Submit</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+            </div>
+			<!-- /.card -->
+          </div>
+          <!-- /.col-md-6 -->
+        
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.1.0
+    </div>
+  </footer>
+  
+  
+  <!-- DESIGNATION Modal -->
+ <div class="modal fade" id="companymodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"  aria-hidden="true"  data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="exampleModalLabel">Add Company</h6>        
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form   enctype="multipart/form-data" action="https://crm.spykllp.com/Organization/addCompany" method="post">
+  
+      <div class="modal-body">
+      
+               <div class="form-group row">
+
+                    <div class="col-sm-6">
+                        <label  for="example-nf-email" >Company Name<sup style="color:red;">*</sup></label>
+                        <input type="text" id="name" name="name" class="form-control input-sm" placeholder="Enter Company Name" required="required">
+                    </div>
+                    <div class="col-sm-6">
+                        <label  for="example-input-small">Phone No<sup style="color:red;">*</sup></label>                            
+                        <input type="number" id="phone" name="phone" class="form-control input-sm" placeholder="Enter Company Phone No" required="required">
+                    </div>
+                    <div class="col-sm-6">
+                        <label  for="example-input-small">Email<sup style="color:red;">*</sup></label>                            
+                        <input type="email" id="email" name="email" class="form-control input-sm" placeholder="Enter Company Email" required="required">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label  for="example-input-small">Country<sup style="color:red;">*</sup></label>                            
+                          <select class="form-control" onchange="getstate($(this).val(),'emp_presentstate')"  id="emp_presentcountry" name="emp_presentcountry" required="required">
+                          <option>Select Country</option>
+                                                    <option  value="1" >INDIA</option>
+                                                    
+                        </select>
+                    </div>
+                      <div class="col-sm-6">
+                        <label  for="example-input-small">State<sup style="color:red;">*</sup></label>                            
+                        <select class="form-control" id="emp_presentstate" name="emp_presentstate" onchange="getcity($(this).val(),'emp_presentcity')" required="required">
+                      <option>Select State</option>
+                      <option value="" selected="selected"></option>
+                      
+                    </select>
+                    </div>
+                      <div class="col-sm-6">
+                        <label  for="example-input-small">City<sup style="color:red;">*</sup></label>                            
+                        <select class="form-control" id="emp_presentcity" name="emp_presentcity">
+                      <option>Select City</option>
+                      <option value="" selected="selected"></option>          
+                      
+                    </select>
+                    </div>
+
+
+
+                    <div class="col-sm-6">
+                        <label  for="example-input-small">Address</label>                            
+                        <input type="text" id="address" name="address" class="form-control input-sm" placeholder="Enter Address">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label  for="example-input-small">Contact Person Name<sup style="color:red;">*</sup></label>                            
+                        <input type="text" id="cpersonname" name="cpersonname" class="form-control input-sm" placeholder="Enter Contact Person Name" required="required">
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <label  for="example-input-small">Contact Person Mobile No<sup style="color:red;">*</sup></label>                            
+                        <input type="number" id="cmobile" name="cmobile" class="form-control input-sm" required="required" placeholder="Enter Contact Person Mobile No">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="example-input-small">Contact Person Email</label>                            
+                        <input type="email" id="cemail" name="cemail" required="required" class="form-control input-sm" placeholder="Enter Contact Person Email">         
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="example-input-small">Gst No</label>                            
+                        <input type="text" id="gstno" name="gstno" class="form-control input-sm" placeholder="Enter GSTNO">         
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="example-input-small">CIN Number</label>                            
+                        <input type="text" id="kycno" name="kycno" class="form-control input-sm" placeholder="Enter Kyc Document No">         
+                    </div>
+                    
+                    
+                    
+                                     
+               </div>
+
+                    
+      </div>
+      <div class="modal-footer">       
+        <button type="submit" class="btn btn-primary pull-right btn-sm">Save</button>
+        <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal"  style="margin-right:10px;">Close</button>        
+      </div>
+  </form>
+    </div>
+  </div>
+</div>   
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="dist/js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard3.js"></script>
+<script src="dist/js/custom.js"></script>
+
+
+
+</body>
+</html>

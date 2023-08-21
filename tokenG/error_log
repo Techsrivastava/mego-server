@@ -1,0 +1,1 @@
+[24-Jul-2021 19:23:07 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/nm7x6fr6m8dr/public_html/mego.cbtcrm.com/tokenG/RtcTokenBuilderSample2.php on line 9
